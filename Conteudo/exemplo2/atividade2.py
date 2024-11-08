@@ -24,12 +24,12 @@ try:
     media_estelionato = np.mean(array_estelionato)
     mediana_estelionato = np.median(array_estelionato)
     soma_estelionato = np.sum(array_estelionato)
-    distancia_media_mediana_estelionato = abs((media_estelionato - mediana_estelionato)/mediana_estelionato)
+    distancia_media_mediana_estelionato = abs((media_estelionato - mediana_estelionato)/mediana_estelionato)*100
 
     print(f'\nTotal de estelionatos: {soma_estelionato}')
     print(f'Media de estelionatos ocorridos ao longo dos anos: {media_estelionato:.2f}')
     print(f'Mediana de estelionatos ocorridos ao longo dos anos: {mediana_estelionato:.2f}')
-    print(f'Diferenca entre media e mediana: {distancia_media_mediana_estelionato:.2f}%')
+    print(f'Diferenca entre media e mediana: {distancia_media_mediana_estelionato}%')
 
 
 except Exception as e:
